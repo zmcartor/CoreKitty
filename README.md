@@ -4,9 +4,7 @@ CoreKitty :cat: :cat2:
 "Cat"egory for Core Data 'findBy' accessors
 
 ### Why ?
-Writing Core Data lookup boilerplate is a bummer. The *findBy<fieldname>* methods from other dynamic
-languages make data lookup easy. Other frameworks exist for smoothing over Core Data, however I wanted something
-easy and lightweight. 
+Writing Core Data lookup boilerplate is a bummer. The *findBy<fieldname>* methods from other dynamic languages make data lookup easy. A single category provides simple but powerful enhancements which make finding and sorting enities less of an NSHassle.
 
 Also Metaprogramming in ObjC is fun! :frog:
 
