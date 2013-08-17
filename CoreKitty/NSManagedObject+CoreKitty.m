@@ -80,7 +80,12 @@ id determineTypeDispatch(id self, SEL _cmd, id param) {
 
 
 + (NSString *)entityName {
-    // TODO Make this a dispatch once property on the category so not looked up every time!
+    
+    if (kittyEntityName) {
+        return kittyEntityName;
+    }
+    
+    // Core Data entities do NOT have to match class names.
     NSString *myName = NSStringFromClass([self class]);
     id dele = [UIApplication sharedApplication].delegate;
     NSManagedObjectModel *model = [dele managedObjectModel];
