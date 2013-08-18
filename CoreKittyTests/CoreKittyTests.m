@@ -6,27 +6,15 @@
 //  Copyright (c) 2013 Hackazach. All rights reserved.
 //
 
-#import "CoreKittyTests.h"
+#import "Kiwi.h"
 
-@implementation CoreKittyTests
+SPEC_BEGIN(COOLSPEC)
 
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
-}
+describe(@"this is a cool spec", ^{
+    it(@"does a really great job", ^{
+        NSString *Zach = @"hello there!";
+        [[Zach should] equal:@"hello there!"];
+    });
+});
 
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in CoreKittyTests");
-}
-
-@end
+SPEC_END
