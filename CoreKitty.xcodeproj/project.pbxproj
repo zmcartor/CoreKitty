@@ -88,14 +88,6 @@
 		98CBCDB317C1611B00B47435 /* CoreKittyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreKittyTests.m; sourceTree = "<group>"; };
 		98CBCDB517C1611B00B47435 /* CoreKittyTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreKittyTests-Prefix.pch"; sourceTree = "<group>"; };
 		98CBCDB917C170C300B47435 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = Kiwi/Kiwi.xcodeproj; sourceTree = SOURCE_ROOT; };
-		98CBCDC917C1761100B47435 /* KWIntercept.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KWIntercept.h; path = Kiwi/NonARC/KWIntercept.h; sourceTree = "<group>"; };
-		98CBCDCA17C1761100B47435 /* KWIntercept.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KWIntercept.m; path = Kiwi/NonARC/KWIntercept.m; sourceTree = "<group>"; };
-		98CBCDCB17C1761100B47435 /* KWMessagePattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KWMessagePattern.h; path = Kiwi/NonARC/KWMessagePattern.h; sourceTree = "<group>"; };
-		98CBCDCC17C1761100B47435 /* KWMessagePattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KWMessagePattern.m; path = Kiwi/NonARC/KWMessagePattern.m; sourceTree = "<group>"; };
-		98CBCDCD17C1761100B47435 /* KWStub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KWStub.h; path = Kiwi/NonARC/KWStub.h; sourceTree = "<group>"; };
-		98CBCDCE17C1761100B47435 /* KWStub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KWStub.m; path = Kiwi/NonARC/KWStub.m; sourceTree = "<group>"; };
-		98CBCDCF17C1761100B47435 /* KWSymbolicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KWSymbolicator.h; path = Kiwi/NonARC/KWSymbolicator.h; sourceTree = "<group>"; };
-		98CBCDD017C1761100B47435 /* KWSymbolicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KWSymbolicator.m; path = Kiwi/NonARC/KWSymbolicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,14 +119,6 @@
 		9852255A17343ECA00D73DB5 = {
 			isa = PBXGroup;
 			children = (
-				98CBCDC917C1761100B47435 /* KWIntercept.h */,
-				98CBCDCA17C1761100B47435 /* KWIntercept.m */,
-				98CBCDCB17C1761100B47435 /* KWMessagePattern.h */,
-				98CBCDCC17C1761100B47435 /* KWMessagePattern.m */,
-				98CBCDCD17C1761100B47435 /* KWStub.h */,
-				98CBCDCE17C1761100B47435 /* KWStub.m */,
-				98CBCDCF17C1761100B47435 /* KWSymbolicator.h */,
-				98CBCDD017C1761100B47435 /* KWSymbolicator.m */,
 				9852256E17343ECA00D73DB5 /* CoreKitty */,
 				98CBCDAC17C1611B00B47435 /* CoreKittyTests */,
 				9852256517343ECA00D73DB5 /* Frameworks */,
@@ -499,11 +483,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreKittyTests/CoreKittyTests-Prefix.pch";
 				INFOPLIST_FILE = "CoreKittyTests/CoreKittyTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "Kiwi/Classes/**";
+				USER_HEADER_SEARCH_PATHS = "Kiwi/Classes/** Kiwi/NonARC/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -519,11 +501,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreKittyTests/CoreKittyTests-Prefix.pch";
 				INFOPLIST_FILE = "CoreKittyTests/CoreKittyTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "Kiwi/Classes/**";
+				USER_HEADER_SEARCH_PATHS = "Kiwi/Classes/** Kiwi/NonARC/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -556,6 +536,7 @@
 				98CBCDB717C1611B00B47435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
