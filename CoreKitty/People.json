@@ -1,5 +1,5 @@
- [{ "firstName":"John" , "lastName":"Doe" },
-  { "firstName":"Anna" , "lastName":"Smith" },
+ [{ "firstName":"Disco" , "lastName":"Stu" },
+  { "firstName":"Rory" , "lastName":"Bellows"" },
   { "firstName":"Homer" , "lastName":"Simpson" },
   { "firstName":"Lisa" , "lastName":"Simpson" },
   { "firstName":"Marge" , "lastName":"Simpson" },
@@ -9,5 +9,13 @@
   { "firstName":"Barney" , "lastName":"Gumble" },
   { "firstName":"Ned" , "lastName":"Flanders" },
   { "firstName":"Rod" , "lastName":"Flanders" },
-  { "firstName":"Todd" , "lastName":"Flanders" }
+  { "firstName":"Todd" , "lastName":"Flanders" },
+  { "firstName":"Moe" , "lastName":"Syslak" },
+  { "firstName":"Rev" , "lastName":"Lovejoy" },
+  { "firstName":"Allison" , "lastName":"Lovejoy" },
+  { "firstName":"Apu" , "lastName":"Nahasapasapenapetallian" },
+  { "firstName":"Whalon" , "lastName":"Smithers" },
+  { "firstName":"Milhouse" , "lastName":"Van Houten" },
+  { "firstName":"Kurt" , "lastName":"Van Houten" },
+  { "firstName":"Louanne" , "lastName":"Van Houten" }
   ]

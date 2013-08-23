@@ -22,8 +22,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [PeopleModel populatePeople];
-    
     return YES;
 }
 

@@ -7,17 +7,36 @@
 //
 
 #import "Kiwi.h"
+#import "HKZAppDelegate.h"
+#import "PeopleModel.h"
 
-SPEC_BEGIN(COOLSPEC)
+SPEC_BEGIN(CoreKitty)
+
+static NSManagedObjectContext *MOC;
 
 describe(@"CoreKitty", ^{
     
     beforeAll(^{
         // Load up the fake Simpsons JSON
+        HKZAppDelegate *appDelegate = (HKZAppDelegate *)[[UIApplication sharedApplication] delegate];
+        MOC = [appDelegate managedObjectContext];
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSString *resource = [bundle pathForResource:@"People" ofType:@"json"];
+        NSData *JSONData = [[NSData alloc] initWithContentsOfFile:resource];
+        
+        NSError *error = nil;
+        NSArray *peopleArray = [NSJSONSerialization JSONObjectWithData:JSONData
+                                                               options:NSJSONReadingMutableContainers
+                                                                 error:&error];
+        for (NSDictionary *person in peopleArray) {
+            [[PeopleModel alloc] modelFromDictionaryInContext:@"People" dictionary:person context:MOC];
+        }
+        
     });
     
     it(@"counts the number of records", ^{
-            
+        int count = [PeopleModel countRecordsInContext:MOC];
+        [[theValue(count) should] equal:theValue(20)];
     });
     
     it (@"throws an exception if field name not found in Core Data model", ^{

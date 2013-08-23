@@ -10,62 +10,9 @@
 #import "HKZAppDelegate.h"
 
 @interface PeopleModel ()
-// Throw our magic methods via class extension to avoid 'incomplete impl' warnings
-+ (NSArray *)findByFirstName:(NSString *)name;
 @end
 
 @implementation PeopleModel
-
-// throw data into CD
-+ (int)populatePeople {
-    
-    HKZAppDelegate *appDelegate = (HKZAppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    
-    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    NSString *resource = [bundle pathForResource:@"People" ofType:@"json"];
-    NSData *JSONData = [[NSData alloc] initWithContentsOfFile:resource];
-    
-    NSError *error = nil;
-    NSArray *peopleArray = [NSJSONSerialization JSONObjectWithData:JSONData
-                                                          options:NSJSONReadingMutableContainers
-                                                            error:&error];
-    
-    PeopleModel *peopleModel;
-    for (NSDictionary *person in peopleArray) {
-        peopleModel = [[PeopleModel alloc] modelFromDictionaryInContext:@"People" dictionary:person context:context];
-    }
-        
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"People"];
-    [request setIncludesSubentities:YES];
-    
-    NSArray *simpsons = [context executeFetchRequest:request error:&error];
-    NSLog(@"Found %d simpsons records! :D", [simpsons count]);
-    
-    NSArray *blah = [PeopleModel findByFirstName:@"Homer"];
-    
-    // to try - does it hit method missing again when
-    // calling findByName ?
-    // what about thread safty ?
-    
-    NSLog(@"tada %@", blah);
-    
-    return [blah count];
-}
-
-+ (int)countPeople {
-    HKZAppDelegate *appDelegate = (HKZAppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"People"];
-    // could add predicate here ...
-    
-    NSError *error;
-    NSArray *simpsons = [context executeFetchRequest:request error:&error];
-    NSLog(@"Found %d simpson records! :D", [simpsons count]);
-    return [simpsons count];
-}
-
 
 - (id)modelFromDictionaryInContext:(NSString *)modelName dictionary:(NSDictionary *)jsonDict
                            context:(NSManagedObjectContext *)context{

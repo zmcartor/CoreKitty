@@ -9,4 +9,7 @@
 #import <CoreData/CoreData.h>
 
 @interface NSManagedObject (CoreKitty)
+
++ (int)countRecordsInContext:(NSManagedObjectContext *)context;
+
 @end

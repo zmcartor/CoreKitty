@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		982EC28117C7F19B00AEC749 /* PeopleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852258F17343F0600D73DB5 /* PeopleModel.m */; };
+		982EC28517C7F34F00AEC749 /* NSManagedObject+CoreKitty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852258C17343F0600D73DB5 /* NSManagedObject+CoreKitty.m */; };
+		982EC28617C7F35500AEC749 /* HKZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852257817343ECA00D73DB5 /* HKZAppDelegate.m */; };
+		982EC28717C7F3BB00AEC749 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256C17343ECA00D73DB5 /* CoreData.framework */; };
+		982EC28817C7F6CB00AEC749 /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = 9852258D17343F0600D73DB5 /* People.json */; };
 		9852256717343ECA00D73DB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256617343ECA00D73DB5 /* UIKit.framework */; };
 		9852256917343ECA00D73DB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256817343ECA00D73DB5 /* Foundation.framework */; };
 		9852256B17343ECA00D73DB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256A17343ECA00D73DB5 /* CoreGraphics.framework */; };
@@ -77,7 +82,7 @@
 		9852257E17343ECA00D73DB5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9852258B17343F0600D73DB5 /* NSManagedObject+CoreKitty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CoreKitty.h"; sourceTree = "<group>"; };
 		9852258C17343F0600D73DB5 /* NSManagedObject+CoreKitty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CoreKitty.m"; sourceTree = "<group>"; };
-		9852258D17343F0600D73DB5 /* People.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = People.json; sourceTree = "<group>"; };
+		9852258D17343F0600D73DB5 /* People.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = People.json; path = ../CoreKitty/People.json; sourceTree = "<group>"; };
 		9852258E17343F0600D73DB5 /* PeopleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleModel.h; sourceTree = "<group>"; };
 		9852258F17343F0600D73DB5 /* PeopleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleModel.m; sourceTree = "<group>"; };
 		9852259417343FB600D73DB5 /* CoreKitty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreKitty.xcdatamodel; sourceTree = "<group>"; };
@@ -106,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982EC28717C7F3BB00AEC749 /* CoreData.framework in Frameworks */,
 				98CBCDC817C1710000B47435 /* libKiwi.a in Frameworks */,
 				98CBCDA917C1611B00B47435 /* SenTestingKit.framework in Frameworks */,
 				98CBCDAA17C1611B00B47435 /* UIKit.framework in Frameworks */,
@@ -166,7 +172,6 @@
 		9852256F17343ECA00D73DB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9852258D17343F0600D73DB5 /* People.json */,
 				9852257017343ECA00D73DB5 /* CoreKitty-Info.plist */,
 				9852257117343ECA00D73DB5 /* InfoPlist.strings */,
 				9852257417343ECA00D73DB5 /* main.m */,
@@ -190,6 +195,7 @@
 		98CBCDAD17C1611B00B47435 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9852258D17343F0600D73DB5 /* People.json */,
 				98CBCDAE17C1611B00B47435 /* CoreKittyTests-Info.plist */,
 				98CBCDAF17C1611B00B47435 /* InfoPlist.strings */,
 				98CBCDB517C1611B00B47435 /* CoreKittyTests-Prefix.pch */,
@@ -321,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982EC28817C7F6CB00AEC749 /* People.json in Resources */,
 				98CBCDB117C1611B00B47435 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +367,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982EC28617C7F35500AEC749 /* HKZAppDelegate.m in Sources */,
+				982EC28517C7F34F00AEC749 /* NSManagedObject+CoreKitty.m in Sources */,
+				982EC28117C7F19B00AEC749 /* PeopleModel.m in Sources */,
 				98CBCDB417C1611B00B47435 /* CoreKittyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

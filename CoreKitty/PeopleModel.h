@@ -15,7 +15,6 @@
 
 - (id)modelFromDictionaryInContext:(NSString *)modelName dictionary:(NSDictionary *)jsonDict
                            context:(NSManagedObjectContext *)context;
-+ (int)populatePeople;
 
 @property (nonatomic, retain) NSString * firstName;
 @property (nonatomic, retain) NSString * lastName;
