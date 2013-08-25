@@ -7,35 +7,33 @@
 //
 
 #import "Kiwi.h"
-#import "HKZAppDelegate.h"
+#import "HKZStore.h"
 #import "PeopleModel.h"
 
 SPEC_BEGIN(CoreKitty)
 
-static NSManagedObjectContext *MOC;
-
 describe(@"CoreKitty", ^{
     
-    beforeAll(^{
-        // Load up the fake Simpsons JSON
-        HKZAppDelegate *appDelegate = (HKZAppDelegate *)[[UIApplication sharedApplication] delegate];
-        MOC = [appDelegate managedObjectContext];
-        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-        NSString *resource = [bundle pathForResource:@"People" ofType:@"json"];
-        NSData *JSONData = [[NSData alloc] initWithContentsOfFile:resource];
-        
-        NSError *error = nil;
-        NSArray *peopleArray = [NSJSONSerialization JSONObjectWithData:JSONData
-                                                               options:NSJSONReadingMutableContainers
-                                                                 error:&error];
-        for (NSDictionary *person in peopleArray) {
-            [[PeopleModel alloc] modelFromDictionaryInContext:@"People" dictionary:person context:MOC];
-        }
-        
-    });
+    // Load up the fake Simpsons JSON
+    HKZStore *store = [[HKZStore alloc] init];
+    __block NSManagedObjectContext *managedObjectContext = store.managedObjectContext;
+  
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *resource = [bundle pathForResource:@"People" ofType:@"json"];
+    NSData *JSONData = [[NSData alloc] initWithContentsOfFile:resource];
+    
+    NSError *error = nil;
+    NSArray *peopleArray = [NSJSONSerialization JSONObjectWithData:JSONData
+                                                           options:NSJSONReadingMutableContainers
+                                                             error:&error];
+    for (NSDictionary *person in peopleArray) {
+        [[PeopleModel alloc] modelFromDictionaryInContext:@"People" dictionary:person context:managedObjectContext];
+    }
+    
     
     it(@"counts the number of records", ^{
-        int count = [PeopleModel countRecordsInContext:MOC];
+        NSManagedObjectContext *managedObjectContext = store.managedObjectContext;
+        int count = [PeopleModel countRecordsInContext:managedObjectContext];
         [[theValue(count) should] equal:theValue(20)];
     });
     
