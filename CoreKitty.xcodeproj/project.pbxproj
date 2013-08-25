@@ -7,58 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		982EC28117C7F19B00AEC749 /* PeopleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852258F17343F0600D73DB5 /* PeopleModel.m */; };
-		982EC28517C7F34F00AEC749 /* NSManagedObject+CoreKitty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852258C17343F0600D73DB5 /* NSManagedObject+CoreKitty.m */; };
-		982EC28617C7F35500AEC749 /* HKZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852257817343ECA00D73DB5 /* HKZAppDelegate.m */; };
-		982EC28717C7F3BB00AEC749 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256C17343ECA00D73DB5 /* CoreData.framework */; };
-		982EC28817C7F6CB00AEC749 /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = 9852258D17343F0600D73DB5 /* People.json */; };
-		9852256717343ECA00D73DB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256617343ECA00D73DB5 /* UIKit.framework */; };
-		9852256917343ECA00D73DB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256817343ECA00D73DB5 /* Foundation.framework */; };
-		9852256B17343ECA00D73DB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256A17343ECA00D73DB5 /* CoreGraphics.framework */; };
-		9852256D17343ECA00D73DB5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256C17343ECA00D73DB5 /* CoreData.framework */; };
-		9852257317343ECA00D73DB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9852257117343ECA00D73DB5 /* InfoPlist.strings */; };
-		9852257517343ECA00D73DB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852257417343ECA00D73DB5 /* main.m */; };
-		9852257917343ECA00D73DB5 /* HKZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852257817343ECA00D73DB5 /* HKZAppDelegate.m */; };
-		9852257B17343ECA00D73DB5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9852257A17343ECA00D73DB5 /* Default.png */; };
-		9852257D17343ECA00D73DB5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9852257C17343ECA00D73DB5 /* Default@2x.png */; };
-		9852257F17343ECA00D73DB5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9852257E17343ECA00D73DB5 /* Default-568h@2x.png */; };
-		9852259017343F0600D73DB5 /* NSManagedObject+CoreKitty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852258C17343F0600D73DB5 /* NSManagedObject+CoreKitty.m */; };
-		9852259117343F0600D73DB5 /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = 9852258D17343F0600D73DB5 /* People.json */; };
-		9852259217343F0600D73DB5 /* PeopleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9852258F17343F0600D73DB5 /* PeopleModel.m */; };
-		9852259517343FB600D73DB5 /* CoreKitty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9852259317343FB600D73DB5 /* CoreKitty.xcdatamodeld */; };
-		98CBCDA917C1611B00B47435 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBCDA817C1611B00B47435 /* SenTestingKit.framework */; };
-		98CBCDAA17C1611B00B47435 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256617343ECA00D73DB5 /* UIKit.framework */; };
-		98CBCDAB17C1611B00B47435 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852256817343ECA00D73DB5 /* Foundation.framework */; };
-		98CBCDB117C1611B00B47435 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98CBCDAF17C1611B00B47435 /* InfoPlist.strings */; };
-		98CBCDB417C1611B00B47435 /* CoreKittyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CBCDB317C1611B00B47435 /* CoreKittyTests.m */; };
-		98CBCDC817C1710000B47435 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBCDC117C170C300B47435 /* libKiwi.a */; };
+		9899E90917C9B99300739B50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9899E90817C9B99300739B50 /* UIKit.framework */; };
+		9899E90B17C9B99300739B50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9899E90A17C9B99300739B50 /* Foundation.framework */; };
+		9899E90D17C9B99300739B50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9899E90C17C9B99300739B50 /* CoreGraphics.framework */; };
+		9899E90F17C9B99300739B50 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9899E90E17C9B99300739B50 /* CoreData.framework */; };
+		9899E91517C9B99300739B50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9899E91317C9B99300739B50 /* InfoPlist.strings */; };
+		9899E91717C9B99300739B50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899E91617C9B99300739B50 /* main.m */; };
+		9899E91B17C9B99300739B50 /* HKZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899E91A17C9B99300739B50 /* HKZAppDelegate.m */; };
+		9899E91D17C9B99300739B50 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9899E91C17C9B99300739B50 /* Default.png */; };
+		9899E91F17C9B99300739B50 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9899E91E17C9B99300739B50 /* Default@2x.png */; };
+		9899E92117C9B99300739B50 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9899E92017C9B99300739B50 /* Default-568h@2x.png */; };
+		9899E92C17C9B99300739B50 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9899E92B17C9B99300739B50 /* SenTestingKit.framework */; };
+		9899E92D17C9B99300739B50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9899E90817C9B99300739B50 /* UIKit.framework */; };
+		9899E92E17C9B99300739B50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9899E90A17C9B99300739B50 /* Foundation.framework */; };
+		9899E92F17C9B99300739B50 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9899E90E17C9B99300739B50 /* CoreData.framework */; };
+		9899E93717C9B99300739B50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9899E93517C9B99300739B50 /* InfoPlist.strings */; };
+		9899E94517C9BA3C00739B50 /* CoreKitty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9899E94317C9BA3C00739B50 /* CoreKitty.xcdatamodeld */; };
+		9899E94617C9BA3C00739B50 /* CoreKitty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9899E94317C9BA3C00739B50 /* CoreKitty.xcdatamodeld */; };
+		9899E94C17C9BA5D00739B50 /* NSManagedObject+CoreKitty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899E94817C9BA5D00739B50 /* NSManagedObject+CoreKitty.m */; };
+		9899E94D17C9BA5D00739B50 /* NSManagedObject+CoreKitty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899E94817C9BA5D00739B50 /* NSManagedObject+CoreKitty.m */; };
+		9899E94E17C9BA5D00739B50 /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = 9899E94917C9BA5D00739B50 /* People.json */; };
+		9899E94F17C9BA5D00739B50 /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = 9899E94917C9BA5D00739B50 /* People.json */; };
+		9899E95017C9BA5D00739B50 /* PeopleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899E94B17C9BA5D00739B50 /* PeopleModel.m */; };
+		9899E95117C9BA5D00739B50 /* PeopleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899E94B17C9BA5D00739B50 /* PeopleModel.m */; };
+		9899E95517C9BA7500739B50 /* CoreKittyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899E95217C9BA7500739B50 /* CoreKittyTests.m */; };
+		9899E95617C9BA7500739B50 /* HKZStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9899E95417C9BA7500739B50 /* HKZStore.m */; };
+		9899E96617C9BF7700739B50 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9899E95F17C9BF3C00739B50 /* libKiwi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		98CBCDC017C170C300B47435 /* PBXContainerItemProxy */ = {
+		9899E93017C9B99300739B50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 98CBCDB917C170C300B47435 /* Kiwi.xcodeproj */;
+			containerPortal = 9899E8FD17C9B99300739B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9899E90417C9B99300739B50;
+			remoteInfo = CoreKitty;
+		};
+		9899E95E17C9BF3C00739B50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9899E95717C9BF3C00739B50 /* Kiwi.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F5015B9F11583A77002E9A98;
 			remoteInfo = Kiwi;
 		};
-		98CBCDC217C170C300B47435 /* PBXContainerItemProxy */ = {
+		9899E96017C9BF3C00739B50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 98CBCDB917C170C300B47435 /* Kiwi.xcodeproj */;
+			containerPortal = 9899E95717C9BF3C00739B50 /* Kiwi.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 832C83C7157263B300F160D5;
 			remoteInfo = "Kiwi-OSX";
 		};
-		98CBCDC417C170C300B47435 /* PBXContainerItemProxy */ = {
+		9899E96217C9BF3C00739B50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 98CBCDB917C170C300B47435 /* Kiwi.xcodeproj */;
+			containerPortal = 9899E95717C9BF3C00739B50 /* Kiwi.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F5015C9E11584017002E9A98;
 			remoteInfo = KiwiTests;
 		};
-		98CBCDC617C170E800B47435 /* PBXContainerItemProxy */ = {
+		9899E96417C9BF4800739B50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 98CBCDB917C170C300B47435 /* Kiwi.xcodeproj */;
+			containerPortal = 9899E95717C9BF3C00739B50 /* Kiwi.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = F5015B9E11583A77002E9A98;
 			remoteInfo = Kiwi;
@@ -66,149 +74,151 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9852256317343ECA00D73DB5 /* CoreKitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreKitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9852256617343ECA00D73DB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9852256817343ECA00D73DB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9852256A17343ECA00D73DB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9852256C17343ECA00D73DB5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		9852257017343ECA00D73DB5 /* CoreKitty-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreKitty-Info.plist"; sourceTree = "<group>"; };
-		9852257217343ECA00D73DB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9852257417343ECA00D73DB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9852257617343ECA00D73DB5 /* CoreKitty-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreKitty-Prefix.pch"; sourceTree = "<group>"; };
-		9852257717343ECA00D73DB5 /* HKZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKZAppDelegate.h; sourceTree = "<group>"; };
-		9852257817343ECA00D73DB5 /* HKZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKZAppDelegate.m; sourceTree = "<group>"; };
-		9852257A17343ECA00D73DB5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9852257C17343ECA00D73DB5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		9852257E17343ECA00D73DB5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9852258B17343F0600D73DB5 /* NSManagedObject+CoreKitty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CoreKitty.h"; sourceTree = "<group>"; };
-		9852258C17343F0600D73DB5 /* NSManagedObject+CoreKitty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CoreKitty.m"; sourceTree = "<group>"; };
-		9852258D17343F0600D73DB5 /* People.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = People.json; path = ../CoreKitty/People.json; sourceTree = "<group>"; };
-		9852258E17343F0600D73DB5 /* PeopleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleModel.h; sourceTree = "<group>"; };
-		9852258F17343F0600D73DB5 /* PeopleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleModel.m; sourceTree = "<group>"; };
-		9852259417343FB600D73DB5 /* CoreKitty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreKitty.xcdatamodel; sourceTree = "<group>"; };
-		98CBCDA717C1611B00B47435 /* CoreKittyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreKittyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		98CBCDA817C1611B00B47435 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		98CBCDAE17C1611B00B47435 /* CoreKittyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreKittyTests-Info.plist"; sourceTree = "<group>"; };
-		98CBCDB017C1611B00B47435 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		98CBCDB317C1611B00B47435 /* CoreKittyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreKittyTests.m; sourceTree = "<group>"; };
-		98CBCDB517C1611B00B47435 /* CoreKittyTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreKittyTests-Prefix.pch"; sourceTree = "<group>"; };
-		98CBCDB917C170C300B47435 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = Kiwi/Kiwi.xcodeproj; sourceTree = SOURCE_ROOT; };
+		9899E90517C9B99300739B50 /* CoreKitty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreKitty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9899E90817C9B99300739B50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9899E90A17C9B99300739B50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9899E90C17C9B99300739B50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9899E90E17C9B99300739B50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9899E91217C9B99300739B50 /* CoreKitty-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreKitty-Info.plist"; sourceTree = "<group>"; };
+		9899E91417C9B99300739B50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9899E91617C9B99300739B50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9899E91817C9B99300739B50 /* CoreKitty-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreKitty-Prefix.pch"; sourceTree = "<group>"; };
+		9899E91917C9B99300739B50 /* HKZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKZAppDelegate.h; sourceTree = "<group>"; };
+		9899E91A17C9B99300739B50 /* HKZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKZAppDelegate.m; sourceTree = "<group>"; };
+		9899E91C17C9B99300739B50 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9899E91E17C9B99300739B50 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9899E92017C9B99300739B50 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9899E92A17C9B99300739B50 /* CoreKittyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreKittyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9899E92B17C9B99300739B50 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9899E93417C9B99300739B50 /* CoreKittyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreKittyTests-Info.plist"; sourceTree = "<group>"; };
+		9899E93617C9B99300739B50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9899E94417C9BA3C00739B50 /* CoreKitty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreKitty.xcdatamodel; sourceTree = "<group>"; };
+		9899E94717C9BA5D00739B50 /* NSManagedObject+CoreKitty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CoreKitty.h"; sourceTree = "<group>"; };
+		9899E94817C9BA5D00739B50 /* NSManagedObject+CoreKitty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CoreKitty.m"; sourceTree = "<group>"; };
+		9899E94917C9BA5D00739B50 /* People.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = People.json; sourceTree = "<group>"; };
+		9899E94A17C9BA5D00739B50 /* PeopleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleModel.h; sourceTree = "<group>"; };
+		9899E94B17C9BA5D00739B50 /* PeopleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleModel.m; sourceTree = "<group>"; };
+		9899E95217C9BA7500739B50 /* CoreKittyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreKittyTests.m; sourceTree = "<group>"; };
+		9899E95317C9BA7500739B50 /* HKZStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKZStore.h; sourceTree = "<group>"; };
+		9899E95417C9BA7500739B50 /* HKZStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKZStore.m; sourceTree = "<group>"; };
+		9899E95717C9BF3C00739B50 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9852256017343ECA00D73DB5 /* Frameworks */ = {
+		9899E90217C9B99300739B50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9852256717343ECA00D73DB5 /* UIKit.framework in Frameworks */,
-				9852256917343ECA00D73DB5 /* Foundation.framework in Frameworks */,
-				9852256B17343ECA00D73DB5 /* CoreGraphics.framework in Frameworks */,
-				9852256D17343ECA00D73DB5 /* CoreData.framework in Frameworks */,
+				9899E90917C9B99300739B50 /* UIKit.framework in Frameworks */,
+				9899E90B17C9B99300739B50 /* Foundation.framework in Frameworks */,
+				9899E90D17C9B99300739B50 /* CoreGraphics.framework in Frameworks */,
+				9899E90F17C9B99300739B50 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98CBCDA317C1611B00B47435 /* Frameworks */ = {
+		9899E92617C9B99300739B50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				982EC28717C7F3BB00AEC749 /* CoreData.framework in Frameworks */,
-				98CBCDC817C1710000B47435 /* libKiwi.a in Frameworks */,
-				98CBCDA917C1611B00B47435 /* SenTestingKit.framework in Frameworks */,
-				98CBCDAA17C1611B00B47435 /* UIKit.framework in Frameworks */,
-				98CBCDAB17C1611B00B47435 /* Foundation.framework in Frameworks */,
+				9899E96617C9BF7700739B50 /* libKiwi.a in Frameworks */,
+				9899E92C17C9B99300739B50 /* SenTestingKit.framework in Frameworks */,
+				9899E92D17C9B99300739B50 /* UIKit.framework in Frameworks */,
+				9899E92E17C9B99300739B50 /* Foundation.framework in Frameworks */,
+				9899E92F17C9B99300739B50 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9852255A17343ECA00D73DB5 = {
+		9899E8FC17C9B99300739B50 = {
 			isa = PBXGroup;
 			children = (
-				9852256E17343ECA00D73DB5 /* CoreKitty */,
-				98CBCDAC17C1611B00B47435 /* CoreKittyTests */,
-				9852256517343ECA00D73DB5 /* Frameworks */,
-				9852256417343ECA00D73DB5 /* Products */,
+				9899E95717C9BF3C00739B50 /* Kiwi.xcodeproj */,
+				9899E91017C9B99300739B50 /* CoreKitty */,
+				9899E93217C9B99300739B50 /* CoreKittyTests */,
+				9899E90717C9B99300739B50 /* Frameworks */,
+				9899E90617C9B99300739B50 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9852256417343ECA00D73DB5 /* Products */ = {
+		9899E90617C9B99300739B50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9852256317343ECA00D73DB5 /* CoreKitty.app */,
-				98CBCDA717C1611B00B47435 /* CoreKittyTests.octest */,
+				9899E90517C9B99300739B50 /* CoreKitty.app */,
+				9899E92A17C9B99300739B50 /* CoreKittyTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9852256517343ECA00D73DB5 /* Frameworks */ = {
+		9899E90717C9B99300739B50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9852256617343ECA00D73DB5 /* UIKit.framework */,
-				9852256817343ECA00D73DB5 /* Foundation.framework */,
-				9852256A17343ECA00D73DB5 /* CoreGraphics.framework */,
-				9852256C17343ECA00D73DB5 /* CoreData.framework */,
-				98CBCDA817C1611B00B47435 /* SenTestingKit.framework */,
+				9899E90817C9B99300739B50 /* UIKit.framework */,
+				9899E90A17C9B99300739B50 /* Foundation.framework */,
+				9899E90C17C9B99300739B50 /* CoreGraphics.framework */,
+				9899E90E17C9B99300739B50 /* CoreData.framework */,
+				9899E92B17C9B99300739B50 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9852256E17343ECA00D73DB5 /* CoreKitty */ = {
+		9899E91017C9B99300739B50 /* CoreKitty */ = {
 			isa = PBXGroup;
 			children = (
-				98CBCDB917C170C300B47435 /* Kiwi.xcodeproj */,
-				9852257717343ECA00D73DB5 /* HKZAppDelegate.h */,
-				9852258B17343F0600D73DB5 /* NSManagedObject+CoreKitty.h */,
-				9852258C17343F0600D73DB5 /* NSManagedObject+CoreKitty.m */,
-				9852259317343FB600D73DB5 /* CoreKitty.xcdatamodeld */,
-				9852258E17343F0600D73DB5 /* PeopleModel.h */,
-				9852258F17343F0600D73DB5 /* PeopleModel.m */,
-				9852257817343ECA00D73DB5 /* HKZAppDelegate.m */,
-				9852256F17343ECA00D73DB5 /* Supporting Files */,
+				9899E91917C9B99300739B50 /* HKZAppDelegate.h */,
+				9899E91A17C9B99300739B50 /* HKZAppDelegate.m */,
+				9899E94717C9BA5D00739B50 /* NSManagedObject+CoreKitty.h */,
+				9899E94817C9BA5D00739B50 /* NSManagedObject+CoreKitty.m */,
+				9899E94917C9BA5D00739B50 /* People.json */,
+				9899E94A17C9BA5D00739B50 /* PeopleModel.h */,
+				9899E94B17C9BA5D00739B50 /* PeopleModel.m */,
+				9899E94317C9BA3C00739B50 /* CoreKitty.xcdatamodeld */,
+				9899E91117C9B99300739B50 /* Supporting Files */,
 			);
 			path = CoreKitty;
 			sourceTree = "<group>";
 		};
-		9852256F17343ECA00D73DB5 /* Supporting Files */ = {
+		9899E91117C9B99300739B50 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9852257017343ECA00D73DB5 /* CoreKitty-Info.plist */,
-				9852257117343ECA00D73DB5 /* InfoPlist.strings */,
-				9852257417343ECA00D73DB5 /* main.m */,
-				9852257617343ECA00D73DB5 /* CoreKitty-Prefix.pch */,
-				9852257A17343ECA00D73DB5 /* Default.png */,
-				9852257C17343ECA00D73DB5 /* Default@2x.png */,
-				9852257E17343ECA00D73DB5 /* Default-568h@2x.png */,
+				9899E91217C9B99300739B50 /* CoreKitty-Info.plist */,
+				9899E91317C9B99300739B50 /* InfoPlist.strings */,
+				9899E91617C9B99300739B50 /* main.m */,
+				9899E91817C9B99300739B50 /* CoreKitty-Prefix.pch */,
+				9899E91C17C9B99300739B50 /* Default.png */,
+				9899E91E17C9B99300739B50 /* Default@2x.png */,
+				9899E92017C9B99300739B50 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		98CBCDAC17C1611B00B47435 /* CoreKittyTests */ = {
+		9899E93217C9B99300739B50 /* CoreKittyTests */ = {
 			isa = PBXGroup;
 			children = (
-				98CBCDB317C1611B00B47435 /* CoreKittyTests.m */,
-				98CBCDAD17C1611B00B47435 /* Supporting Files */,
+				9899E95217C9BA7500739B50 /* CoreKittyTests.m */,
+				9899E95317C9BA7500739B50 /* HKZStore.h */,
+				9899E95417C9BA7500739B50 /* HKZStore.m */,
+				9899E93317C9B99300739B50 /* Supporting Files */,
 			);
 			path = CoreKittyTests;
 			sourceTree = "<group>";
 		};
-		98CBCDAD17C1611B00B47435 /* Supporting Files */ = {
+		9899E93317C9B99300739B50 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9852258D17343F0600D73DB5 /* People.json */,
-				98CBCDAE17C1611B00B47435 /* CoreKittyTests-Info.plist */,
-				98CBCDAF17C1611B00B47435 /* InfoPlist.strings */,
-				98CBCDB517C1611B00B47435 /* CoreKittyTests-Prefix.pch */,
+				9899E93417C9B99300739B50 /* CoreKittyTests-Info.plist */,
+				9899E93517C9B99300739B50 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		98CBCDBA17C170C300B47435 /* Products */ = {
+		9899E95817C9BF3C00739B50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98CBCDC117C170C300B47435 /* libKiwi.a */,
-				98CBCDC317C170C300B47435 /* libKiwi-OSX.a */,
-				98CBCDC517C170C300B47435 /* KiwiTests.octest */,
+				9899E95F17C9BF3C00739B50 /* libKiwi.a */,
+				9899E96117C9BF3C00739B50 /* libKiwi-OSX.a */,
+				9899E96317C9BF3C00739B50 /* KiwiTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,13 +226,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9852256217343ECA00D73DB5 /* CoreKitty */ = {
+		9899E90417C9B99300739B50 /* CoreKitty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9852258517343ECA00D73DB5 /* Build configuration list for PBXNativeTarget "CoreKitty" */;
+			buildConfigurationList = 9899E93D17C9B99300739B50 /* Build configuration list for PBXNativeTarget "CoreKitty" */;
 			buildPhases = (
-				9852255F17343ECA00D73DB5 /* Sources */,
-				9852256017343ECA00D73DB5 /* Frameworks */,
-				9852256117343ECA00D73DB5 /* Resources */,
+				9899E90117C9B99300739B50 /* Sources */,
+				9899E90217C9B99300739B50 /* Frameworks */,
+				9899E90317C9B99300739B50 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -230,112 +240,113 @@
 			);
 			name = CoreKitty;
 			productName = CoreKitty;
-			productReference = 9852256317343ECA00D73DB5 /* CoreKitty.app */;
+			productReference = 9899E90517C9B99300739B50 /* CoreKitty.app */;
 			productType = "com.apple.product-type.application";
 		};
-		98CBCDA617C1611B00B47435 /* CoreKittyTests */ = {
+		9899E92917C9B99300739B50 /* CoreKittyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98CBCDB817C1611B00B47435 /* Build configuration list for PBXNativeTarget "CoreKittyTests" */;
+			buildConfigurationList = 9899E94017C9B99300739B50 /* Build configuration list for PBXNativeTarget "CoreKittyTests" */;
 			buildPhases = (
-				98CBCDA217C1611B00B47435 /* Sources */,
-				98CBCDA317C1611B00B47435 /* Frameworks */,
-				98CBCDA417C1611B00B47435 /* Resources */,
-				98CBCDA517C1611B00B47435 /* ShellScript */,
+				9899E92517C9B99300739B50 /* Sources */,
+				9899E92617C9B99300739B50 /* Frameworks */,
+				9899E92717C9B99300739B50 /* Resources */,
+				9899E92817C9B99300739B50 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				98CBCDC717C170E800B47435 /* PBXTargetDependency */,
+				9899E96517C9BF4800739B50 /* PBXTargetDependency */,
+				9899E93117C9B99300739B50 /* PBXTargetDependency */,
 			);
 			name = CoreKittyTests;
 			productName = CoreKittyTests;
-			productReference = 98CBCDA717C1611B00B47435 /* CoreKittyTests.octest */;
+			productReference = 9899E92A17C9B99300739B50 /* CoreKittyTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9852255B17343ECA00D73DB5 /* Project object */ = {
+		9899E8FD17C9B99300739B50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = HKZ;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Hackazach;
 			};
-			buildConfigurationList = 9852255E17343ECA00D73DB5 /* Build configuration list for PBXProject "CoreKitty" */;
+			buildConfigurationList = 9899E90017C9B99300739B50 /* Build configuration list for PBXProject "CoreKitty" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 9852255A17343ECA00D73DB5;
-			productRefGroup = 9852256417343ECA00D73DB5 /* Products */;
+			mainGroup = 9899E8FC17C9B99300739B50;
+			productRefGroup = 9899E90617C9B99300739B50 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 98CBCDBA17C170C300B47435 /* Products */;
-					ProjectRef = 98CBCDB917C170C300B47435 /* Kiwi.xcodeproj */;
+					ProductGroup = 9899E95817C9BF3C00739B50 /* Products */;
+					ProjectRef = 9899E95717C9BF3C00739B50 /* Kiwi.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				9852256217343ECA00D73DB5 /* CoreKitty */,
-				98CBCDA617C1611B00B47435 /* CoreKittyTests */,
+				9899E90417C9B99300739B50 /* CoreKitty */,
+				9899E92917C9B99300739B50 /* CoreKittyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		98CBCDC117C170C300B47435 /* libKiwi.a */ = {
+		9899E95F17C9BF3C00739B50 /* libKiwi.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libKiwi.a;
-			remoteRef = 98CBCDC017C170C300B47435 /* PBXContainerItemProxy */;
+			remoteRef = 9899E95E17C9BF3C00739B50 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98CBCDC317C170C300B47435 /* libKiwi-OSX.a */ = {
+		9899E96117C9BF3C00739B50 /* libKiwi-OSX.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libKiwi-OSX.a";
-			remoteRef = 98CBCDC217C170C300B47435 /* PBXContainerItemProxy */;
+			remoteRef = 9899E96017C9BF3C00739B50 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98CBCDC517C170C300B47435 /* KiwiTests.octest */ = {
+		9899E96317C9BF3C00739B50 /* KiwiTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = KiwiTests.octest;
-			remoteRef = 98CBCDC417C170C300B47435 /* PBXContainerItemProxy */;
+			remoteRef = 9899E96217C9BF3C00739B50 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9852256117343ECA00D73DB5 /* Resources */ = {
+		9899E90317C9B99300739B50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9852257317343ECA00D73DB5 /* InfoPlist.strings in Resources */,
-				9852257B17343ECA00D73DB5 /* Default.png in Resources */,
-				9852257D17343ECA00D73DB5 /* Default@2x.png in Resources */,
-				9852257F17343ECA00D73DB5 /* Default-568h@2x.png in Resources */,
-				9852259117343F0600D73DB5 /* People.json in Resources */,
+				9899E91517C9B99300739B50 /* InfoPlist.strings in Resources */,
+				9899E91D17C9B99300739B50 /* Default.png in Resources */,
+				9899E91F17C9B99300739B50 /* Default@2x.png in Resources */,
+				9899E92117C9B99300739B50 /* Default-568h@2x.png in Resources */,
+				9899E94E17C9BA5D00739B50 /* People.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98CBCDA417C1611B00B47435 /* Resources */ = {
+		9899E92717C9B99300739B50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				982EC28817C7F6CB00AEC749 /* People.json in Resources */,
-				98CBCDB117C1611B00B47435 /* InfoPlist.strings in Resources */,
+				9899E93717C9B99300739B50 /* InfoPlist.strings in Resources */,
+				9899E94F17C9BA5D00739B50 /* People.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		98CBCDA517C1611B00B47435 /* ShellScript */ = {
+		9899E92817C9B99300739B50 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,52 +362,58 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9852255F17343ECA00D73DB5 /* Sources */ = {
+		9899E90117C9B99300739B50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9852257517343ECA00D73DB5 /* main.m in Sources */,
-				9852257917343ECA00D73DB5 /* HKZAppDelegate.m in Sources */,
-				9852259017343F0600D73DB5 /* NSManagedObject+CoreKitty.m in Sources */,
-				9852259217343F0600D73DB5 /* PeopleModel.m in Sources */,
-				9852259517343FB600D73DB5 /* CoreKitty.xcdatamodeld in Sources */,
+				9899E91717C9B99300739B50 /* main.m in Sources */,
+				9899E91B17C9B99300739B50 /* HKZAppDelegate.m in Sources */,
+				9899E94517C9BA3C00739B50 /* CoreKitty.xcdatamodeld in Sources */,
+				9899E94C17C9BA5D00739B50 /* NSManagedObject+CoreKitty.m in Sources */,
+				9899E95017C9BA5D00739B50 /* PeopleModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98CBCDA217C1611B00B47435 /* Sources */ = {
+		9899E92517C9B99300739B50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				982EC28617C7F35500AEC749 /* HKZAppDelegate.m in Sources */,
-				982EC28517C7F34F00AEC749 /* NSManagedObject+CoreKitty.m in Sources */,
-				982EC28117C7F19B00AEC749 /* PeopleModel.m in Sources */,
-				98CBCDB417C1611B00B47435 /* CoreKittyTests.m in Sources */,
+				9899E94617C9BA3C00739B50 /* CoreKitty.xcdatamodeld in Sources */,
+				9899E94D17C9BA5D00739B50 /* NSManagedObject+CoreKitty.m in Sources */,
+				9899E95117C9BA5D00739B50 /* PeopleModel.m in Sources */,
+				9899E95517C9BA7500739B50 /* CoreKittyTests.m in Sources */,
+				9899E95617C9BA7500739B50 /* HKZStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		98CBCDC717C170E800B47435 /* PBXTargetDependency */ = {
+		9899E93117C9B99300739B50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9899E90417C9B99300739B50 /* CoreKitty */;
+			targetProxy = 9899E93017C9B99300739B50 /* PBXContainerItemProxy */;
+		};
+		9899E96517C9BF4800739B50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kiwi;
-			targetProxy = 98CBCDC617C170E800B47435 /* PBXContainerItemProxy */;
+			targetProxy = 9899E96417C9BF4800739B50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9852257117343ECA00D73DB5 /* InfoPlist.strings */ = {
+		9899E91317C9B99300739B50 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9852257217343ECA00D73DB5 /* en */,
+				9899E91417C9B99300739B50 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		98CBCDAF17C1611B00B47435 /* InfoPlist.strings */ = {
+		9899E93517C9B99300739B50 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				98CBCDB017C1611B00B47435 /* en */,
+				9899E93617C9B99300739B50 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -404,7 +421,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9852258317343ECA00D73DB5 /* Debug */ = {
+		9899E93B17C9B99300739B50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -432,10 +449,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
-		9852258417343ECA00D73DB5 /* Release */ = {
+		9899E93C17C9B99300739B50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -456,11 +474,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		9852258617343ECA00D73DB5 /* Debug */ = {
+		9899E93E17C9B99300739B50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -471,7 +490,7 @@
 			};
 			name = Debug;
 		};
-		9852258717343ECA00D73DB5 /* Release */ = {
+		9899E93F17C9B99300739B50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -482,37 +501,39 @@
 			};
 			name = Release;
 		};
-		98CBCDB617C1611B00B47435 /* Debug */ = {
+		9899E94117C9B99300739B50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreKitty.app/CoreKitty";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoreKittyTests/CoreKittyTests-Prefix.pch";
+				GCC_PREFIX_HEADER = "CoreKitty/CoreKitty-Prefix.pch";
 				INFOPLIST_FILE = "CoreKittyTests/CoreKittyTests-Info.plist";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = "Kiwi/Classes/** Kiwi/NonARC/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		98CBCDB717C1611B00B47435 /* Release */ = {
+		9899E94217C9B99300739B50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreKitty.app/CoreKitty";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoreKittyTests/CoreKittyTests-Prefix.pch";
+				GCC_PREFIX_HEADER = "CoreKitty/CoreKitty-Prefix.pch";
 				INFOPLIST_FILE = "CoreKittyTests/CoreKittyTests-Info.plist";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				USER_HEADER_SEARCH_PATHS = "Kiwi/Classes/** Kiwi/NonARC/**";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -521,29 +542,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9852255E17343ECA00D73DB5 /* Build configuration list for PBXProject "CoreKitty" */ = {
+		9899E90017C9B99300739B50 /* Build configuration list for PBXProject "CoreKitty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9852258317343ECA00D73DB5 /* Debug */,
-				9852258417343ECA00D73DB5 /* Release */,
+				9899E93B17C9B99300739B50 /* Debug */,
+				9899E93C17C9B99300739B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9852258517343ECA00D73DB5 /* Build configuration list for PBXNativeTarget "CoreKitty" */ = {
+		9899E93D17C9B99300739B50 /* Build configuration list for PBXNativeTarget "CoreKitty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9852258617343ECA00D73DB5 /* Debug */,
-				9852258717343ECA00D73DB5 /* Release */,
+				9899E93E17C9B99300739B50 /* Debug */,
+				9899E93F17C9B99300739B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98CBCDB817C1611B00B47435 /* Build configuration list for PBXNativeTarget "CoreKittyTests" */ = {
+		9899E94017C9B99300739B50 /* Build configuration list for PBXNativeTarget "CoreKittyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98CBCDB617C1611B00B47435 /* Debug */,
-				98CBCDB717C1611B00B47435 /* Release */,
+				9899E94117C9B99300739B50 /* Debug */,
+				9899E94217C9B99300739B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -551,17 +572,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9852259317343FB600D73DB5 /* CoreKitty.xcdatamodeld */ = {
+		9899E94317C9BA3C00739B50 /* CoreKitty.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9852259417343FB600D73DB5 /* CoreKitty.xcdatamodel */,
+				9899E94417C9BA3C00739B50 /* CoreKitty.xcdatamodel */,
 			);
-			currentVersion = 9852259417343FB600D73DB5 /* CoreKitty.xcdatamodel */;
+			currentVersion = 9899E94417C9BA3C00739B50 /* CoreKitty.xcdatamodel */;
 			path = CoreKitty.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 9852255B17343ECA00D73DB5 /* Project object */;
+	rootObject = 9899E8FD17C9B99300739B50 /* Project object */;
 }
