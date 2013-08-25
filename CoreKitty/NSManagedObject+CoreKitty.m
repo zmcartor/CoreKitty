@@ -15,9 +15,20 @@ static NSString *kittyEntityName;
 static NSDictionary *kittyFieldList;
 
 + (int)countRecordsInContext:(NSManagedObjectContext *)context {
-    return 20;
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:[self entityNameinContext:context]];
+    [request setIncludesSubentities:NO];
+    NSError *error;
+    [context executeFetchRequest:request error:&error];
+    if (error) {
+        NSLog(@"CoreKitty: and error occured - %@", error);
+    }
+    int count = [context countForFetchRequest:request error:&error];
+    if (error) {
+        NSLog(@"CoreKitty: and error occured - %@", error);
+        return 0;
+    }
+    return count;
 }
-
 
 
 # pragma mark - Core Kitty internal functions
@@ -27,7 +38,7 @@ static NSDictionary *kittyFieldList;
         return (BOOL)([kittyFieldList valueForKey:fieldname]);
     }
     
-    NSString * entityName = [self entityName];
+    NSString * entityName = [self entityNameinContext:context];
     NSEntityDescription *entity = [NSEntityDescription entityForName:entityName
                                               inManagedObjectContext:context];
     
@@ -36,15 +47,14 @@ static NSDictionary *kittyFieldList;
     return (BOOL)([kittyFieldList valueForKey:fieldname]);
 }
 
-+ (NSString *)entityName {
++ (NSString *)entityNameinContext:(NSManagedObjectContext *)moc {
     if (kittyEntityName) {
         return kittyEntityName;
     }
     
     // Core Data entities do NOT have to match class names.
     NSString *myName = NSStringFromClass([self class]);
-    id dele = [UIApplication sharedApplication].delegate;
-    NSManagedObjectModel *model = [dele managedObjectModel];
+    NSManagedObjectModel *model = moc.persistentStoreCoordinator.managedObjectModel;
     for (NSEntityDescription *description in model.entities) {
         if ([description.managedObjectClassName isEqualToString:myName]) {
             kittyEntityName = description.name;
