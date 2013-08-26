@@ -1,42 +1,31 @@
 CoreKitty :cat: :cat2:
 ========= 
 
-"Cat"egory for Core Data 'findBy' accessors
+"Cat"egory for Core Data
 
 ### Why ?
-Writing Core Data lookup boilerplate is a bummer. The *findBy<fieldname>* methods from other dynamic languages make data lookup easy. A single category provides simple but powerful enhancements which make finding and sorting enities less of an NSHassle.
+Writing Core Data fetch boilerplate is tedious. A single category for the most
+common fetch and aggregate functions keeps things simple and lightweight. No
+subclassing NSManagedObject or extra framework required.
 
-Also Metaprogramming in ObjC is fun! :frog:
+### Features (planned V1)
+
+- recordCount
+- find all fieldname equal to value (NSString, int, Bool, Date)
+- count all fieldname equal to value (NSString, int, Bool, Date)
+- All operations parameterizable per NSManagedContext which makes integration with NSOperationQueue or background thread possible.
+- Aggregate functions min, max, avg of given field
+
+Upon inclusion, CoreKitty figures out the cooresponding CoreData entity
+class and becomes schema aware. Autoconfiguration and schema awareness makes
+CoreKitty powerful, convenient and resilient to mistyped field names.
 
 ### Installation
-- Add the NSManagedObject+CoreKitty category to your project. 
+- Add NSManagedObject+CoreKitty category to your project. 
 - #import on any NSManagedObject subclass
-- Because of the nature of ARC, selectors you'd like to use need to be declared in either the .h or a private class extension.
- It is *not* necessary to declare a findBy selector for every single field in the model.
+- Enjoy!
 
-Example:
-```objc
-// MyModel.h
-+ (NSArray *)findByFirstName:(NSString *);
-+ (NSArray *)findBySomeFieldName:(NSString *);
-```
-That's it! Now running :
-
-```objc
-NSArray *results = [MyModel findByName:@"Homer"];
-```
-
-Will fetch all people models where name = Homer, autometa-magically!
-
-### Errata and todos
-Has not yet been profiled. Use at your own risk in mission critical apps.
-
-#### Coming Features 
-
-Additional 'find' selectors
-- findByField1AndField2AndField3 .. etc in a vArgs type list.
-- findNot (inverse of findBy)
-- support Core Data relational fields
-
-
-
+### Howto Contribute
+CoreKitty is in active development and pull requests are gladly accepted for V1
+features, as well as any other convenient methods not listed. When submitting
+and pull request, please also include a corresponding Kiwi test.
